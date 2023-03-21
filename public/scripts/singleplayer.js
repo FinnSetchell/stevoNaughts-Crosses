@@ -222,6 +222,7 @@ function currentPlayerWins(method) { // 'method' indicates how the player won, i
 
 // adds the playerX.symbol to a cell when they play in it
 function addMark(c) {
+    console.log("board:" + board, " -board[c]:" + board[c])
     //first, checks that the player can play in cell:
     if (game.state == state.PLAYING) { //only works when game is playing
         if (board[c].data == null || board[c].data == board[c].data.data) { //checks cell is empty before playing
